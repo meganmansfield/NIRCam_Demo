@@ -27,9 +27,9 @@ cp Eureka/demos/JWST/S3_nircam_wfss_template.ecf .
 # cp Eureka/demos/JWST/S5_template.ecf .
 # cp Eureka/demos/JWST/S6_template.ecf .
 
-sed -i 's:/home/User/:'`pwd`':' S3_nircam_wfss_template.ecf
+sed -i '' -e 's:/home/User/:'`pwd`':' S3_nircam_wfss_template.ecf
 
-sed -i 's:/Data/JWST-Sim/NIRCam/Stage2/:'/tiny/Stage2/':' S3_nircam_wfss_template.ecf
-sed -i 's:/Data/JWST-Sim/NIRCam/Stage3/:'/tiny/Stage3/':' S3_nircam_wfss_template.ecf
+sed -i '' -e 's:/Data/JWST-Sim/NIRCam/Stage2/:'/tiny/Stage2/':' S3_nircam_wfss_template.ecf
+sed -i '' -e 's:/Data/JWST-Sim/NIRCam/Stage3/:'/tiny/Stage3/':' S3_nircam_wfss_template.ecf
 
 python run_demo_eureka.py
