@@ -7,7 +7,9 @@ pip install -r eureka_freeze.txt
 
 # installing Eureka at the frozen version
 cd Eureka
-git checkout 57cb0f1a576dfbbef9ba616b7a13a28c42efb876
+git checkout cf9922e967a6bc23418152ab53dae2dcc5232b30
 pip install .
 
 cd ../
+
+conda install jupyter
