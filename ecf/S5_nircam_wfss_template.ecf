@@ -4,7 +4,7 @@ allapers        True # Run S5 on all of the apertures considered in S4? Otherwis
 rescale_err     False    # Rescale uncertainties to have reduced chi-squared of unity
 fit_par         ./S5_fit_par_template.ecf # What fitting ecf do you want to use?
 run_verbose     False
-fit_method      [emcee] #options are: lsq, emcee, dynesty (can list multiple types separated by commas)
+fit_method      [lsq] #options are: lsq, emcee, dynesty (can list multiple types separated by commas)
 run_myfuncs     [batman_tr,polynomial] #options are: batman_tr, batman_ecl, sinusoid_pc, expramp, and polynomial (can list multiple types separated by commas)
 
 # Limb darkening controls (not yet implemented)
@@ -37,8 +37,8 @@ testing_model   False # Boolean, set True to only inject a model source of syste
 hide_plots      False # If True, plots will automatically be closed rather than popping up
 
 # Project directory
-topdir          /Users/megan/Documents/Conferences/2022_ERSDataChallenge/NIRCam_Data/astrophysical-only_model/
+topdir          /Users/megan/Documents/Code/NIRCam_Demo/NIRCam_Demo/NIRCam_full_data/
 
 # Directories relative to project dir
-inputdir        /EurekaResults/Stage4/	# The folder containing the outputs from Eureka!'s S4 pipeline (will be overwritten if calling S4 and S5 sequentially)
-outputdir       /EurekaResults/Stage5/
+inputdir        /Stage4/	# The folder containing the outputs from Eureka!'s S4 pipeline (will be overwritten if calling S4 and S5 sequentially)
+outputdir       /Stage5/
